@@ -20,3 +20,5 @@ Cards component sets on 8 of 12 and Filter component sets on 3 of 12, left one s
 
 5) Set useStates, useEffects and props.
 6) Set Cards components and its badges
+7) Set Pagination 
+8) set Search/Filter

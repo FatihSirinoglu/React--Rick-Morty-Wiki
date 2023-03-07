@@ -38,8 +38,8 @@ const Cards = ({results}) => {
         display = "No Result Found :/"
     }
   return (
-    
-        <div>{display}</div>
+    <>{display}</>
+    // <div>{display}</div>
   )
 }
 
