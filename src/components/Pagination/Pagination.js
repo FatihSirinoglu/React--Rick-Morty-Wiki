@@ -3,7 +3,21 @@ import ReactPaginate from 'react-paginate';
 
 
 const Pagination = ( {info, setPageNumber, pageNumber} ) => {
-    return <ReactPaginate className="pagination justify-content-center" pageCount={info?.pages} nextLabel="Next" previousLabel="Prev" nextClassName="btn btn-primary" previousClassName="btn btn-primary"/>
+    return (<ReactPaginate 
+        className="pagination justify-content-center gap-3 my-4" 
+        pageCount={info?.pages} 
+        nextLabel="Next" 
+        previousLabel="Prev" 
+        nextClassName="btn btn-light" 
+        previousClassName="btn btn-light"
+        pageClassName="page-item"
+        pageLinkClassName="page-link"
+        activeClassName="active"
+        onPageChange={(data)=>{
+            setPageNumber(data.selected + 1)
+        }}
+        forcePage={pageNumber===1? 0 : pageNumber - 1}
+    />)
 
 
 
